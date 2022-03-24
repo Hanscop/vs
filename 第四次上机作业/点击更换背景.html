@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../ico/heard.ico" type="image/x-icon">
+    <title>换背景奥里给</title>
+    <style>
+        body {
+            background: url("./img/3.jpg") no-repeat;
+            background-size: 100%;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        li {
+            list-style-type: none;
+            float: left;
+            margin: 10px;
+            border: 2px pink solid;
+        }
+        .centerTopBox {
+            margin: auto;
+            width: 680px;
+            height: 150px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+            window.onload = function(){
+                var imgs = document.getElementsByTagName("img");
+                for (var i = 0; i < imgs.length; i++) {
+                imgs[i].onclick = function(){
+                document.body.style.background = "url("+this.src+") no-repeat";//通过js控制改变行内样式
+                document.body.style.backgroundSize = "100%";
+            }}}
+    </script>
+</head>
+<body>
+    <h1>黄老板换皮肤</h1>
+    <div class="centerTopBox">
+        <ul>
+            <li><img src="./img/1.jpg" alt=""></li>
+            <li><img src="./img/2.jpg" alt=""></li>
+            <li><img src="./img/3.jpg" alt=""></li>
+            <li><img src="./img/4.jpg" alt=""></li>
+            <li><img src="./img/5.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
