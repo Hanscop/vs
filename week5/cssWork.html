@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css样式</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0 auto;
+        }
+      #g{
+          font-size: 200px;
+          text-align: center;
+          background-color: red;
+          height: 500px;
+          width: 1000px;
+          animation: example 4s;
+          animation-iteration-count: infinite;
+      }
+      @keyframes example {
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        100% {background-color: green;}
+        }
+
+     .a{
+         color: aqua;
+     }
+     .b{
+         color:blueviolet;
+     }
+     .c{
+         color:yellow;
+     }
+     .d{
+         color:darkblue;
+     }
+     .e{
+         color:darkgreen;
+     }
+    </style>
+</head>
+<body>
+    <div id="g">
+    <strong class="a">G</strong>
+    <strong class="b">o</strong>
+    <strong class="c">o</strong>
+    <strong class="d">l</strong>
+    <strong class="e">e</strong>
+</div>
+</body>
+</html>
+
